@@ -1,54 +1,38 @@
-# Starlight Starter Kit: Basics
+# YeikCar – Official GitHub Repository
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![YeikCar Website](https://yeikcar.com/en/)](https://yeikcar.com/en/)
 
-```
-npm create astro@latest -- --template starlight
-```
+Welcome to the official **YeikCar** repository! This space is dedicated to enhancing our documentation, reporting issues, and collaborating on improvements for YeikCar.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+## About YeikCar
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+YeikCar is a **comprehensive vehicle management application** designed to simplify the tracking of your vehicle's finances and maintenance. Whether you own a car, motorcycle, or bicycle, YeikCar helps you manage expenses, monitor fuel costs, find nearby service stations, and more.
 
-## 🚀 Project Structure
+### Key Features
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+- **Vehicle History Logs**: Maintain a detailed record of your vehicle's past services and repairs, ensuring you're always informed and prepared for resale or audits.
+- **Intuitive and Sleek Design**: Enjoy an easy-to-use, visually appealing interface that makes vehicle management stress-free and enjoyable.
+- **Customizable Reminders**: Set up reminders for oil changes, registration renewals, or any important events, and view them in an intuitive calendar layout.
+- **Find Nearby Services**: Locate gas stations, mechanics, and other automotive services near you with our integrated map feature.
+- **Expense Analytics**: Track and analyze your vehicle expenses with detailed charts and reports, helping you make informed decisions.
+- **Cross-Platform Sync**: Access your data anytime, anywhere, with seamless synchronization across Android, iOS, and web platforms.
+- **Route and Mileage Tracking**: Log your trips and mileage to keep accurate records for personal or business purposes.
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+## How to Contribute
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+We welcome contributions to improve the **YeikCar documentation** and resources. Here's how you can help:
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+1. **Report Issues**: Found a bug or something unclear? Open an issue!
+2. **Improve Documentation**: Submit a pull request with better explanations, fixes, or translations.
+3. **Feature Suggestions**: Have an idea? Let us know through the [Feature Base](https://yeikcar.featurebase.app/).
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## Useful Links
 
-## 🧞 Commands
+- 📖 [Official Website](https://yeikcar.com/)
+- 📱 [Download YeikCar](https://yeikcar.com/download)
+- 📝 [Feature Base (Roadmap & Feedback)](https://yeikcar.featurebase.app/)
+- 📧 [Contact Support](mailto:support@yeikcar.com)
 
-All commands are run from the root of the project, from a terminal:
+## License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+This repository contains **public documentation and community resources**. The YeikCar app itself is proprietary software.
