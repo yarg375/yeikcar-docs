@@ -45,14 +45,16 @@ const { title, description, icon = "right-arrow", href } = Astro.props;
     background-color: var(--sl-color-gray-7);
     border-radius: 0.5rem;
     transition: border-color 0.2s ease;
+    --icon-color: #3d50f5;
   }
 
   :global([data-theme='dark']) .card {
     background-color: var(--sl-color-gray-6);
+    --icon-color: #b2c7ff;
   }
 
   .card:hover {
-    border-color: var(--sl-color-gray-4);
+    border-color: var(--icon-color);
   }
 
   .icon {
@@ -60,17 +62,12 @@ const { title, description, icon = "right-arrow", href } = Astro.props;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    --icon-color: #3d50f5;
     background-color: color-mix(in srgb, var(--icon-color) 15%, transparent);
     border: 2px solid var(--icon-color);
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     width: fit-content;
     color: var(--icon-color);
-  }
-
-  :global([data-theme='dark']) .icon {
-    --icon-color: #b2c7ff;
   }
 
   h3 {
