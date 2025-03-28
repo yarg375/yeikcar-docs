@@ -1,85 +1,34 @@
 ---
-title: Comenzar
-description: Comienza a construir tu sitio de documentación con Starlight.
+title: Primeros Pasos
+description: Aprende a usar YeikCar en minutos.
+template: splash
+hero:
+  tagline: Aprende a usar YeikCar en minutos
+  image:
+    file: ../../../assets/logo/logo.svg
+  actions:
+    - text: Configuración Inicial
+      link: /es/initial-setup
+      icon: right-arrow
+    - text: Visitar YeikCar
+      link: https://yeikcar.com/es
+      icon: external
+      variant: minimal
 ---
 
-import Card from '../../../components/Card.astro';
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-<div class="hero">
-  <h1>Bienvenido a YeikCar</h1>
-  <p>Descubre cómo comenzar a utilizar nuestra plataforma en minutos</p>
-</div>
-
-<div class="cards-grid">
-  <Card
-    title="Configuración Inicial"
-    description="Aprende cómo configurar tu cuenta y realizar los ajustes básicos"
-    icon="⚙️"
-    href="/es/initial-setup"
-  />
-
-  <Card
-    title="Primeros Pasos"
-    description="Guía rápida para comenzar a usar las funciones principales"
-    icon="🚀"
-    href="/es/first-steps"
-  />
-
-  <Card
-    title="Integración API"
-    description="Conecta tus sistemas existentes con nuestra API"
-    icon="🔌"
-    href="/es/api"
-  />
-
-  <Card
-    title="Mejores Prácticas"
-    description="Consejos y recomendaciones para optimizar tu uso"
-    icon="✨"
-    href="/es/mejores-practicas"
-  />
-</div>
-
-<style>
-{`
-  .hero {
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--sl-color-gray-9);
-  }
-
-  .hero p {
-    font-size: 1.25rem;
-    color: var(--sl-color-white);
-    font-weight: 450;
-  }
-
-  :global([data-theme="light"]) .hero p {
-    color: var(--sl-color-gray-9);
-  }
-
-  :global([data-theme="dark"]) .hero h1 {
-    color: var(--sl-color-white);
-  }
-
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
-  }
-
-  @media (max-width: 768px) {
-    .cards-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-`}
-</style>
+<CardGrid>
+  <Card title="Configuración Inicial" icon="rocket">
+    Aprende cómo configurar tu cuenta y empezar a usar YeikCar.
+  </Card>
+  <Card title="Primeros Pasos" icon="puzzle">
+    Guía paso a paso para comenzar a usar las funciones principales.
+  </Card>
+  <Card title="Características" icon="star">
+    Explora todas las funciones y herramientas disponibles.
+  </Card>
+  <Card title="Soporte" icon="information">
+    Encuentra ayuda y recursos adicionales para resolver tus dudas.
+  </Card>
+</CardGrid>

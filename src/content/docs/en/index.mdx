@@ -1,74 +1,34 @@
 ---
 title: Getting Started
-description: Start building your documentation site with Starlight.
+description: Learn how to use YeikCar in minutes.
+template: splash
+hero:
+  tagline: Learn how to use YeikCar in minutes
+  image:
+    file: ../../../assets/logo/logo.svg
+  actions:
+    - text: Initial Setup
+      link: /en/initial-setup
+      icon: right-arrow
+    - text: Visit YeikCar
+      link: https://yeikcar.com/en
+      icon: external
+      variant: minimal
 ---
 
-import Card from '../../../components/Card.astro';
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
-<div class="hero">
-  <h1>Welcome to YeikCar</h1>
-  <p>Discover how to start using our platform in minutes</p>
-</div>
-
-<div class="cards-grid">
-  <Card
-    title="Initial Setup"
-    description="Learn how to set up your account and configure basic settings"
-    icon="⚙️"
-    href="/initial-setup"
-  />
-
-  <Card
-    title="First Steps"
-    description="Quick guide to start using the main features"
-    icon="🚀"
-    href="/first-steps"
-  />
-
-  <Card
-    title="API Integration"
-    description="Connect your existing systems with our API"
-    icon="🔌"
-    href="/en/api"
-  />
-
-  <Card
-    title="Best Practices"
-    description="Tips and recommendations to optimize your usage"
-    icon="✨"
-    href="/en/best-practices"
-  />
-</div>
-
-<style>
-{`
-  .hero {
-    text-align: center;
-    padding: 2rem 0;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  .hero p {
-    font-size: 1.25rem;
-    color: var(--sl-color-white);
-    font-weight: 450;
-  }
-  :global([data-theme="light"]) .hero p {
-    color: var(--sl-color-gray-9);
-  }
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 0;
-  }
-  @media (max-width: 768px) {
-    .cards-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-`}
-</style>
+<CardGrid>
+  <Card title="Initial Setup" icon="rocket">
+    Learn how to set up your account and start using YeikCar.
+  </Card>
+  <Card title="First Steps" icon="puzzle">
+    Step by step guide to start using the main features.
+  </Card>
+  <Card title="Features" icon="star">
+    Explore all available features and tools.
+  </Card>
+  <Card title="Support" icon="information">
+    Find help and additional resources to solve your questions.
+  </Card>
+</CardGrid>

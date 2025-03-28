@@ -19,6 +19,9 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/yarg375/yeikcar-docs',
 			  },
+			components: {
+				SiteTitle: './src/components/SiteTitle.astro',
+			},
 			locales: {
 				en: {
 					label: 'English',
