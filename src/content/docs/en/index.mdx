@@ -6,6 +6,7 @@ hero:
   tagline: Learn how to use YeikCar in minutes
   image:
     file: ../../../assets/logo/logo.svg
+    dark: ../../../assets/logo/logo-white.svg
   actions:
     - text: Initial Setup
       link: /en/initial-setup
@@ -16,19 +17,32 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid } from '@astrojs/starlight/components';
+import Card from '../../../components/Card.astro';
 
-<CardGrid>
-  <Card title="Initial Setup" icon="rocket">
-    Learn how to set up your account and start using YeikCar.
-  </Card>
-  <Card title="First Steps" icon="puzzle">
-    Step by step guide to start using the main features.
-  </Card>
-  <Card title="Features" icon="star">
-    Explore all available features and tools.
-  </Card>
-  <Card title="Support" icon="information">
-    Find help and additional resources to solve your questions.
-  </Card>
+<CardGrid stagger>
+  <Card 
+    title="Initial Setup" 
+    icon="⚙️"
+    description="Learn how to set up your account and start using YeikCar."
+    href="/en/initial-setup"
+  />
+  <Card
+    title="First Steps"
+    icon="📱"
+    description="Step by step guide to start using the main features."
+    href="/en/first-steps"
+  />
+  <Card
+    title="Features"
+    icon="✨"
+    description="Explore all available features and tools."
+    href="/en/features"
+  />
+  <Card
+    title="Support"
+    icon="🤝"
+    description="Find help and additional resources to solve your questions."
+    href="/en/support"
+  />
 </CardGrid>
