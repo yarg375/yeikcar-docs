@@ -6,12 +6,19 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'Docs',
+			title: {
+				en: 'Docs',
+				es: 'Guías'
+			},
 			defaultLocale: 'en',
+	
 			logo: {
 				light: './src/assets/logo/logo.svg',
 				dark: './src/assets/logo/logo-white.svg'
 			},
+			social: {
+				github: 'https://github.com/yarg375/yeikcar-docs',
+			  },
 			locales: {
 				en: {
 					label: 'English',
