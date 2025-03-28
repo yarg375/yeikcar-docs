@@ -1,0 +1,85 @@
+---
+title: Bienvenido a la Documentación de YeikCar
+description: Comienza a construir tu sitio de documentación con Starlight.
+---
+
+import Card from '../../../components/Card.astro';
+
+<div class="hero">
+  <h1>Bienvenido a YeikCar</h1>
+  <p>Descubre cómo comenzar a utilizar nuestra plataforma en minutos</p>
+</div>
+
+<div class="cards-grid">
+  <Card
+    title="Configuración Inicial"
+    description="Aprende cómo configurar tu cuenta y realizar los ajustes básicos"
+    icon="⚙️"
+    href="/es/configuracion-inicial"
+  />
+
+  <Card
+    title="Primeros Pasos"
+    description="Guía rápida para comenzar a usar las funciones principales"
+    icon="🚀"
+    href="/es/primeros-pasos"
+  />
+
+  <Card
+    title="Integración API"
+    description="Conecta tus sistemas existentes con nuestra API"
+    icon="🔌"
+    href="/es/api"
+  />
+
+  <Card
+    title="Mejores Prácticas"
+    description="Consejos y recomendaciones para optimizar tu uso"
+    icon="✨"
+    href="/es/mejores-practicas"
+  />
+</div>
+
+<style>
+{`
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--sl-color-gray-9);
+  }
+
+  .hero p {
+    font-size: 1.25rem;
+    color: var(--sl-color-white);
+    font-weight: 450;
+  }
+
+  :global([data-theme="light"]) .hero p {
+    color: var(--sl-color-gray-9);
+  }
+
+  :global([data-theme="dark"]) .hero h1 {
+    color: var(--sl-color-white);
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+`}
+</style>
