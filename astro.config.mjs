@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: '',
+			title: 'Docs',
 			defaultLocale: 'en',
 			logo: {
 				light: './src/assets/logo/logo.svg',
@@ -25,8 +25,31 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Guides',
+					translations: {
+						es: 'Guías'
+					},
 					items: [
-						{ label: 'Getting Started', link: '/' }
+						{ 
+							label: 'Getting Started',
+							translations: {
+								es: 'Comenzar'
+							},
+							link: '/'
+						},
+						{
+							label: 'Initial Setup',
+							translations: {
+								es: 'Configuración Inicial'
+							},
+							link: '/initial-setup'
+						},
+						{
+							label: 'First Steps',
+							translations: {
+								es: 'Primeros Pasos'
+							},
+							link: '/first-steps'
+						}
 					]
 				}
 			]

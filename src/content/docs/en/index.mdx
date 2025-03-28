@@ -1,14 +1,13 @@
 ---
-title: Welcome to Documentation
-description: Get started building your docs site with Starlight.
+title: Welcome to YeikCar Documentation
+description: Start building your documentation site with Starlight.
 ---
 
 import Card from '../../../components/Card.astro';
 
 <div class="hero">
-  # Welcome to YeikCar
-  
-  Discover how to start using our platform in minutes
+  <h1>Welcome to YeikCar</h1>
+  <p>Discover how to start using our platform in minutes</p>
 </div>
 
 <div class="cards-grid">
@@ -16,14 +15,14 @@ import Card from '../../../components/Card.astro';
     title="Initial Setup"
     description="Learn how to set up your account and configure basic settings"
     icon="⚙️"
-    href="/en/initial-setup"
+    href="/initial-setup"
   />
 
   <Card
-    title="Getting Started"
+    title="First Steps"
     description="Quick guide to start using the main features"
     icon="🚀"
-    href="/en/getting-started"
+    href="/first-steps"
   />
 
   <Card
@@ -45,26 +44,27 @@ import Card from '../../../components/Card.astro';
 {`
   .hero {
     text-align: center;
-    padding: 3rem 0;
-    margin-bottom: 2rem;
+    padding: 2rem 0;
   }
-
   .hero h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #007cf0, #00dfd8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
-
+  .hero p {
+    font-size: 1.25rem;
+    color: var(--sl-color-white);
+    font-weight: 450;
+  }
+  :global([data-theme="light"]) .hero p {
+    color: var(--sl-color-gray-9);
+  }
   .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 0;
   }
-
   @media (max-width: 768px) {
     .cards-grid {
       grid-template-columns: 1fr;
