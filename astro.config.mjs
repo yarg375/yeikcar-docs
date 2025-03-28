@@ -6,8 +6,12 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: '',
 			defaultLocale: 'en',
+			logo: {
+				light: './src/assets/logo/logo.svg',
+				dark: './src/assets/logo/logo-white.svg'
+			},
 			locales: {
 				en: {
 					label: 'English',
