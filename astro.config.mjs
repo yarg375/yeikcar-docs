@@ -73,6 +73,13 @@ export default defineConfig({
 								es: 'Características'
 							},
 							link: '/features'
+						},
+						{
+							label: 'Support',
+							translations: {
+								es: 'Soporte'
+							},
+							link: '/support'
 						}
 					]
 				}
