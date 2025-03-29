@@ -41,15 +41,15 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting Started',
 					translations: {
-						es: 'Guías'
+						es: 'Empieza Aquí'
 					},
 					items: [
 						{ 
-							label: 'Getting Started',
+							label: 'Home',
 							translations: {
-								es: 'Comenzar'
+								es: 'Inicio'
 							},
 							link: '/'
 						},
@@ -82,6 +82,41 @@ export default defineConfig({
 							link: '/support'
 						}
 					]
+				},
+				{
+					label: 'Guides & Tutorials',
+					translations: {
+						es: 'Guías y Tutoriales'
+					},
+					link: '/guides/' // Enlace al índice de la carpeta guides
+				},
+				{
+					label: 'Troubleshooting',
+					translations: {
+						es: 'Solución de Problemas'
+					},
+					link: '/troubleshooting/' // Enlace al índice de la carpeta troubleshooting
+				},
+				{
+					label: 'Examples',
+					translations: {
+						es: 'Ejemplos Prácticos'
+					},
+					link: '/examples/' // Enlace al índice de la carpeta examples
+				},
+				{
+					label: 'Glossary',
+					translations: {
+						es: 'Glosario'
+					},
+					link: '/glossary'
+				},
+				{
+					label: 'Best Practices',
+					translations: {
+						es: 'Mejores Prácticas'
+					},
+					link: '/best-practices'
 				}
 			]
 		}),
