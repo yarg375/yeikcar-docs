@@ -1,12 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
 import icon from "astro-icon";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,8 +10,8 @@ export default defineConfig({
 		icon(),
 		starlight({
 			title: {
-				en: 'Docs',
-				es: 'Guías'
+				en: 'Home',
+				es: 'Inicio'
 			},
 			defaultLocale: 'en',
 	
@@ -25,9 +21,6 @@ export default defineConfig({
 			},
 			social: {
 				github: 'https://github.com/yarg375/yeikcar-docs',
-			},
-			components: {
-				SiteTitle: './src/components/SiteTitle.astro',
 			},
 			locales: {
 				en: {
