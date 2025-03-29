@@ -10,7 +10,21 @@ const { name, size = "1.2em" } = Astro.props;
 const iconName = `mdi:${name}`;
 ---
 
-<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+<span class="feature-title" style="display: inline-flex; align-items: center; gap: 0.5rem;">
   <Icon name={iconName} size={size} />
   <slot />
 </span>
+
+<style>
+  .feature-title {
+    color: #3d50f5;
+  }
+  .feature-title :global(svg) {
+    color: #3d50f5;
+  }
+
+  :global([data-theme="dark"]) .feature-title,
+  :global([data-theme="dark"]) .feature-title :global(svg) {
+    color: #b2c7ff;
+  }
+</style>
