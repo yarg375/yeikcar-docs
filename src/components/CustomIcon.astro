@@ -1,0 +1,16 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+  name: string;
+  size?: string;
+}
+
+const { name, size = "1.2em" } = Astro.props;
+const iconName = `mdi:${name}`;
+---
+
+<span style="display: inline-flex; align-items: center; gap: 0.5rem;">
+  <Icon name={iconName} size={size} />
+  <slot />
+</span>

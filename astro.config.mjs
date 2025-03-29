@@ -1,10 +1,17 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import icon from "astro-icon";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		icon(),
 		starlight({
 			title: {
 				en: 'Docs',
@@ -59,6 +66,13 @@ export default defineConfig({
 								es: 'Primeros Pasos'
 							},
 							link: '/first-steps'
+						},
+						{
+							label: 'Features',
+							translations: {
+								es: 'Características'
+							},
+							link: '/features'
 						}
 					]
 				}
