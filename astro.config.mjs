@@ -88,35 +88,65 @@ export default defineConfig({
 					translations: {
 						es: 'Guías y Tutoriales'
 					},
-					link: '/guides/' // Enlace al índice de la carpeta guides
+					items: [
+						{ 
+							label: 'Overview', 
+							translations: { es: 'Resumen' }, 
+							link: '/guides/' 
+						}
+					]
 				},
 				{
-					label: 'Troubleshooting',
+					label: 'Troubleshooting & FAQ',
 					translations: {
-						es: 'Solución de Problemas'
+						es: 'Solución de Problemas y FAQ'
 					},
-					link: '/troubleshooting/' // Enlace al índice de la carpeta troubleshooting
+					items: [
+						{ 
+							label: 'Overview', 
+							translations: { es: 'Resumen' }, 
+							link: '/troubleshooting/' 
+						}
+					]
 				},
 				{
-					label: 'Examples',
+					label: 'Practical Examples',
 					translations: {
 						es: 'Ejemplos Prácticos'
 					},
-					link: '/examples/' // Enlace al índice de la carpeta examples
+					items: [
+						{ 
+							label: 'Overview', 
+							translations: { es: 'Resumen' }, 
+							link: '/examples/' 
+						}
+					]
 				},
 				{
 					label: 'Glossary',
 					translations: {
 						es: 'Glosario'
 					},
-					link: '/glossary'
+					items: [
+						{ 
+							label: 'Glossary', 
+							translations: { es: 'Glosario' }, 
+							link: '/glossary' 
+						}
+					]
 				},
 				{
 					label: 'Best Practices',
 					translations: {
 						es: 'Mejores Prácticas'
 					},
-					link: '/best-practices'
+					items: [
+						{ 
+							label: 'Best Practices', 
+							translations: { es: 'Mejores Prácticas' }, 
+							link: '/best-practices' 
+						}
+					]
 				}
 			]
 		}),
